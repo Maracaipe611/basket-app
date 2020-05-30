@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  width: 350px;
+  margin: 0 auto;
+  color: #fff;
+  background-image: url(./assets/leather-bg.jpg);
+  background-size: 100px;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.basket {
+  background-image: url(./assets/paper-bg.jpg);
+  color: #111;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.basket ul {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ddd;
+}
+
+.basket .list-item {
+  list-style: none;
+  border-bottom: 1px dotted #ccc;
+  display: flex;
+}
+
+.basket .list-item > div {
+  padding: 10px;
+}
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+.checkbox-wrapper::after {
+  position: absolute;
+  content: ' ';
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.2);
+  top: 0;
+  right: 0;
+}
+
+.checkbox-wrapper::before {
+  position: absolute;
+  content: ' ';
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.2);
+  top: 0;
+  right: 2px;
+}
+
+.add-button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: #c5c5c5;
+  color: #222;
+  bottom: -15px;
+  right: 15px;
+}
+
+.add-button:hover {
+  background: #ddd;
+  cursor: pointer;
+}
