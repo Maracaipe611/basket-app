@@ -20,7 +20,7 @@ class BasketList extends React.Component {
         this.setState({
             items: [
                 ...this.state.items,
-                ''
+                <input type="Text"></input>
             ]
         })
     }
@@ -36,6 +36,12 @@ class BasketList extends React.Component {
             </ul>
 
             <AddButton action={this.addItem} />
+        </div>
+    }
+
+    deleteitem(){
+        return <div className='basket'>
+            
         </div>
     }
 }
